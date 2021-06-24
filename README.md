@@ -2,7 +2,7 @@
 # <center>活动生成模板</center>
 
 <br>
-@author：肖俊（Torrex【莫声谷】）（torrexjun@outlook.com）
+@author：Torrex（torrexjun@outlook.com）
 
 @data：2021-04-19
 
