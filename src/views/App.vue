@@ -20,7 +20,7 @@ export default {
   data() {
     return {}
   },
-  onCreated() {},
+  mounted() {},
   methods: {}
 }
 </script>
