@@ -19,8 +19,8 @@ export function get(url, data = {}) {
       params: params
     }).then(res => {
       resolve(res)
-    }).catch(err => {
-      reject(err)
+    }).catch(e => {
+      reject(e)
     })
   })
 }
