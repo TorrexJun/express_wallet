@@ -37,7 +37,7 @@
 ### 技术介绍及实现流程
 
 - inquirer-常见的交互式命令行用户界面的集合
-- node的方法 fs、os
+- node的方法 fs、os等
 
 1. 通过inquirer键入生成当前活动的名称
 2. 通过fs，根据config文件夹内的基础模板文件，写入到src文件夹内
