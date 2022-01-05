@@ -11,6 +11,7 @@ Vue.prototype.$layer = layer(Vue)
 Vue.prototype.$http = http
 Vue.prototype.$https = http
 
-new Vue({
+const app = new Vue({
   render: h => h(App),
-}).$mount('#app')
+})
+app.$mount('#app')
