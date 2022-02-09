@@ -11,5 +11,6 @@ export default {
     }
 
     Vue.prototype.MAX_UPLOAD_SIZE = 50
+    Vue.prototype.MAX_GROUP_NUMBER = 10
   }
 }
