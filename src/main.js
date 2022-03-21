@@ -9,7 +9,7 @@ import './style/resset.css'
 Vue.config.productionTip = false
 Vue.prototype.$layer = layer(Vue)
 Vue.prototype.$http = http
-Vue.prototype.$https = http
+Vue.prototype.$http = http
 
 const app = new Vue({
   render: h => h(App),
