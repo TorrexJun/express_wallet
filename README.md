@@ -1,59 +1,16 @@
-<br>
-# <center>活动生成模板</center>
+# Vue 3 + TypeScript + Vite
 
-<br>
-@author：Torrex（torrexjun@outlook.com）
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-@data：2021-04-19
+## Recommended IDE Setup
 
--------
-### 前因
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-- 活动开发周期短，页面搭建时间短
-- 各类活动的页面模板框架相较同一
-- 进行多入口开发过程中，有时会出现一些配置没有完成情形
+## Type Support For `.vue` Imports in TS
 
--------
-### 多入口
-多入口是为了解决项目使用单页面负载过重的问题，打包成独立的html,js和css，能公用项目内的公共组件和样式。
-实现方法：
-1. 新增main.js、新增/public/index.html
-2. 在vue.config.js 完成多入口配置
-```js
-"index": {
-  "entry": "src/main.js",
-  "template": "public/index.html"
-},
-```
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
 
+1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
+2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
--------
-### 解决目标
-- 解决多入口配置并生成入口配置文件(page.index.json)，使得多入口配置目录更加清晰
-- 自动完成多入口配置，并生成对应项目的views文件夹及app.vue、main.js、index.html、api.js及index.js的引入、路由重定向的配置
-- 使得开发者专注于vue和api的开发
-
--------
-### 技术介绍及实现流程
-
-- inquirer-常见的交互式命令行用户界面的集合
-- node的方法 fs、os等
-
-1. 通过inquirer键入生成当前活动的名称
-2. 通过fs，根据config文件夹内的基础模板文件，写入到src文件夹内
-3. 生成对应的html入口和api文件等
-4. 开发者只需完成对应的app.vue的页面和api的调用开发即可
-
--------
-### 目录结构简要说明
-
-```js
-|- config                     |- 模板配置
-   |- add.project.conf.js        |- 执行文件
-   |- api                        |- 新增的api文件
-   |- App.vue                    |- 新增的vue文件
-   |- index.html                 |- 新增的html文件
-   |- main.js                    |- 新增的主文件
-   |- page.index.json            |- 项目内所有活动的入口配置
-|- vue.config.js              |- 引入page.index,json 完成多入口配置
-```
+You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
