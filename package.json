@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^18.7.16",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "axios": "^0.27.2",
     "node-sass": "^7.0.1",
+    "pinia": "^2.0.22",
     "sass-loader": "^13.0.2",
     "vite-plugin-vconsole": "^1.2.2",
     "vue": "^3.2.37"

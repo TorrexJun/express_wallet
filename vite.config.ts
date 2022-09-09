@@ -1,4 +1,4 @@
-import { defineConfig, ConfigEnv } from 'vite'
+import { defineConfig, ConfigEnv, UserConfigExport  } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { viteVConsole } from "vite-plugin-vconsole"
@@ -8,14 +8,14 @@ import * as path from 'path'
 
 
 
-export default ({ mode, command }: ConfigEnv) => {
+export default ({ mode, command }: ConfigEnv): UserConfigExport  => {
   return defineConfig({
     plugins: [
       vue(),
       vueJsx(),
       viteVConsole({
         entry: [path.resolve('src/main.ts')],
-        localEnabled: command === 'serve', // serve开发环境下
+        localEnabled: command === 'build', // serve开发环境下
         enabled: command !== 'serve' || mode === 'test', // 打包环境下
         config: {
           maxLogNumber: 1000,
@@ -26,7 +26,6 @@ export default ({ mode, command }: ConfigEnv) => {
     build: {
       target: 'es2015',
       rollupOptions: {
-        external: ['vconsole'],
         output: {
           manualChunks: (id: string, { getModuleInfo }: GetManualChunkApi) => manualChunks(id, getModuleInfo)
         }
