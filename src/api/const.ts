@@ -11,3 +11,5 @@ export const REAL_API_URL: string = '127.0.0.1:8081'
 export const PROXY_API_URL: string = '/api'
 // 请求地址
 export const BASE_URL: string = import.meta.env.DEV ? PROXY_API_URL : REAL_API_URL
+
+export const TOKEN_NAME: string = 'tokenId'
