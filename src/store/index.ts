@@ -2,7 +2,26 @@ import { defineStore } from 'pinia'
 
 export const useStore  = defineStore('useStore', {
   state() {
-    return {}
+    return {
+      useState: 1
+    }
   },
-  actions: {}
+  actions: {
+    addState() {
+      this.useState++
+    }
+  }
+})
+
+export const payStore = defineStore('useStore', {
+  state() {
+    return {
+      payState: 1
+    }
+  },
+  actions: {
+    addState() {
+      this.payState++
+    }
+  }
 })

@@ -2,6 +2,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
+import { useStore, payStore } from './store'
+const uStore = useStore()
+const pStore = payStore()
+console.log(pStore)
+console.log(uStore.addState())
+console.log(uStore.useState)
 </script>
 
 <template>
