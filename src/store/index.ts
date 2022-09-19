@@ -8,7 +8,7 @@ export const useStore  = defineStore('useStore', {
   },
   actions: {
     addState() {
-      this.useState++
+                    this.useState++
     }
   }
 })
