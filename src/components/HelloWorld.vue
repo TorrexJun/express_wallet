@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-defineProps({ msg: String })
+defineProps({
+  msg: {
+    type: String,
+    default: '',
+  },
+})
 
 const count = ref(0)
 </script>
@@ -14,7 +19,8 @@ const count = ref(0)
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
-  </div><p>
+  </div>
+  <p>
     Check out
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
       >create-vue</a

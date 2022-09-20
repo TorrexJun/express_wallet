@@ -8,7 +8,7 @@
 import { AxiosRequestConfig } from 'axios'
 import { BASE_URL } from './const'
 
-export const networkConfig: AxiosRequestConfig =  {
+export const networkConfig: AxiosRequestConfig = {
   baseURL: BASE_URL,
-  timeout: 10000
+  timeout: 10000,
 }
