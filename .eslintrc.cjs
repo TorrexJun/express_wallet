@@ -5,9 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-essential',
-    'standard-with-typescript',
-    'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'alloy',
+    'alloy/typescript',
   ],
   overrides: [],
   parser: 'vue-eslint-parser',
@@ -26,6 +25,7 @@ module.exports = {
     // allow space-before-function-paren
     'space-before-function-paren': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    '@typescript-eslint/no-explicit-any': ['off']
   }
 }
