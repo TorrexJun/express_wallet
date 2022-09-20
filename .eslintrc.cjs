@@ -7,6 +7,7 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'alloy',
     'alloy/typescript',
+    'prettier'
   ],
   overrides: [],
   parser: 'vue-eslint-parser',
