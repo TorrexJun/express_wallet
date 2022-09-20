@@ -3,7 +3,12 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 const fn = (a: any, b: any, c: any) => {
-  console.log(a, b, c)
+  console.log(
+    a,
+    b,
+
+    c
+  )
 }
 console.log(fn(1, 2, 4))
 </script>
