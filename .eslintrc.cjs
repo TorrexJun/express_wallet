@@ -5,8 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-essential',
-    'alloy',
-    'alloy/typescript',
+    'standard-with-typescript',
+    'plugin:@typescript-eslint/recommended',
     'prettier'
   ],
   overrides: [],
