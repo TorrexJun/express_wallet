@@ -2,6 +2,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
+const fn = (a: any, b: any, c: any) => {
+  console.log(a)
+}
+console.log(fn(1, 2,
+  4))
+
 </script>
 
 <template>
