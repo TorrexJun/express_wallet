@@ -8,8 +8,7 @@
     "build:test": "vue-tsc --noEmit && vite build --mode test",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "prepare": "husky install",
-    "lint": "vue-cli-service lint"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "^18.7.16",
@@ -51,7 +50,7 @@
     "*.{ts,tsx,js}": [
       "eslint --fix",
       "prettier --write",
-      "git add"
+      "git reset"
     ],
     "run/*": [
       "git rm --cached"

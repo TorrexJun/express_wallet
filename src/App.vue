@@ -7,7 +7,8 @@ const fn = (a: any, b: any, c: any) => {
   b, 
   c)
 }
-console.log(fn(1, 2,
+console.log(fn(1, 
+            2,
   4))
 
 </script>
