@@ -30,6 +30,7 @@
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-explicit-any": ["off"],
+    "endOfLine": 0,
     "@typescript-eslint/ban-types": [
       "error",
       {
