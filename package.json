@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "serve": "babel-node --presets env server.ts",
     "build:test": "vue-tsc --noEmit && vite build --mode test",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -15,17 +16,20 @@
     "@types/node": "^18.7.16",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "axios": "^0.27.2",
+    "express": "^4.18.1",
     "node-sass": "^7.0.1",
     "pinia": "^2.0.22",
     "qiankun": "^2.7.5",
     "sass-loader": "^13.0.2",
     "vite-plugin-vconsole": "^1.2.2",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
     "@vitejs/plugin-vue": "^3.0.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
