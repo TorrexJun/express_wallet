@@ -10,7 +10,6 @@ import path from 'path'
 // import { fileURLToPath } from 'url'
 import express from 'express'
 import { createServer as createViteServer } from 'vite'
-import { log } from 'console'
 
 // const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // console.log('__dirname', __dirname)
@@ -28,7 +27,7 @@ async function createServer() {
   // 使用 vite 的 Connect 实例作为中间件,可以在任何一个兼容connect的nodejs框架中被当作一个中间件
   // 作用是接管客户端文件的请求
   app.use(vite.middlewares)
-  app.use('*', async (req, res) => {
+  app.use('*', async (req: any, res: any) => {
     try {
       const url = req.originalUrl
       // 读取index.html
@@ -47,7 +46,7 @@ async function createServer() {
       const html = template.replace(`<!--ssr-outlet-->`, appHtml)
       // 返回渲染后的HTML
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
-    } catch (e) {
+    } catch (e: Error | any) {
       // 如果捕获到了一个错误，让 Vite 来修复该堆栈，这样它就可以映射回
       // 你的实际源码中。
       vite.ssrFixStacktrace(e)
