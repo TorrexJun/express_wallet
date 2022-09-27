@@ -1,4 +1,4 @@
-import { defineConfig, ConfigEnv, UserConfigExport } from 'vite'
+import { defineConfig, ConfigEnv, UserConfigExport, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 // import { viteVConsole } from 'vite-plugin-vconsole'
