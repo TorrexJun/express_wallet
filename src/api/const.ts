@@ -14,4 +14,4 @@ export const BASE_URL: string = import.meta.env.DEV
   ? PROXY_API_URL
   : REAL_API_URL
 
-export const TOKEN_NAME = 'tokenId'
+export const TOKEN_NAME = 'Authorization'
