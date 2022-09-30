@@ -18,6 +18,7 @@ console.log(fn(1, 2, 4))
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" />
 </template>
 <style scoped>
 .logo {
