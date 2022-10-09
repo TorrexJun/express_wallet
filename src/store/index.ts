@@ -4,6 +4,7 @@ export const useStore = defineStore('useStore', {
   state() {
     return {
       useState: 1,
+      token: '',
     }
   },
   actions: {
