@@ -18,10 +18,7 @@ console.log(fn(1, 2, 4))
       <img src="../../assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <HelloWorld msg="Vite + Vue" />
-  <HelloWorld msg="Vite + Vue" />
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vuesss" />
 </template>
 <style scoped>
 .logo {
