@@ -27,7 +27,6 @@ const reduce = () => {
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
-      <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
   <p>
