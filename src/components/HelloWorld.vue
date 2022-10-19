@@ -20,6 +20,7 @@ const reduce = () => {
 
 <template>
   <h1>{{ msg }}</h1>
+  <h1>{{ msg }}</h1>
 
   <div class="card">
     <button type="button" @click="add">add count is {{ count }}</button>
