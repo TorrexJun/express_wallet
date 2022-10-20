@@ -1,15 +1,15 @@
 import { createSSRApp, App } from 'vue'
+// css
 import './style.css'
+// element
 import Element from './App.vue'
+// router
 import router from './router'
 import { Router } from 'vue-router'
+// pinia
 import { createPinia } from 'pinia'
-interface CreateApp {
-  app: App
-  router: Router
-}
 
-export function createApp(): CreateApp {
+export function createApp(): CreateApp<App, Router> {
   const app = createSSRApp(Element)
   app.use(router)
   app.use(createPinia())
