@@ -116,12 +116,12 @@ export const SHAPE_PATH_FORMULAS = {
   [ShapePathFormulasKeys.MESSAGE]: {
     formula: (width: number, height: number) => {
       const arrowWidth = width * 0.2
-      const arrowheight = height * 0.2
-      return `M 0 0 L ${width} 0 L ${width} ${height - arrowheight} L ${
+      const arrowHeight = height * 0.2
+      return `M 0 0 L ${width} 0 L ${width} ${height - arrowHeight} L ${
         width / 2
-      } ${height - arrowheight} L ${width / 2 - arrowWidth} ${height} L ${
+      } ${height - arrowHeight} L ${width / 2 - arrowWidth} ${height} L ${
         width / 2 - arrowWidth
-      } ${height - arrowheight} L 0 ${height - arrowheight} Z`
+      } ${height - arrowHeight} L 0 ${height - arrowHeight} Z`
     },
   },
   [ShapePathFormulasKeys.ROUND_MESSAGE]: {
@@ -200,7 +200,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.5,
     range: [0, 1],
     relative: 'left',
-    getBaseSize: (width: number, height: number) => width,
+    getBaseSize: (width: number) => width,
     formula: (width: number, height: number, value: number) => {
       const vertex = width * value
       return `M ${vertex} 0 L 0 ${height} L ${width} ${height} Z`
@@ -211,7 +211,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.25,
     range: [0, 0.9],
     relative: 'left',
-    getBaseSize: (width: number, height: number) => width,
+    getBaseSize: (width: number) => width,
     formula: (width: number, height: number, value: number) => {
       const point = width * value
       return `M ${point} 0 L ${width} 0 L ${
@@ -224,7 +224,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.25,
     range: [0, 0.9],
     relative: 'right',
-    getBaseSize: (width: number, height: number) => width,
+    getBaseSize: (width: number) => width,
     formula: (width: number, height: number, value: number) => {
       const point = width * value
       return `M 0 0 L ${
@@ -237,7 +237,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.25,
     range: [0, 0.5],
     relative: 'left',
-    getBaseSize: (width: number, height: number) => width,
+    getBaseSize: (width: number) => width,
     formula: (width: number, height: number, value: number) => {
       const point = width * value
       return `M ${point} 0 L ${
@@ -250,7 +250,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.2,
     range: [0, 1],
     relative: 'top',
-    getBaseSize: (width: number, height: number) => height,
+    getBaseSize: (height: number) => height,
     formula: (width: number, height: number, value: number) => {
       const point = height * value
       return `M ${
@@ -263,7 +263,7 @@ export const SHAPE_PATH_FORMULAS = {
     defaultValue: 0.2,
     range: [0, 0.9],
     relative: 'right',
-    getBaseSize: (width: number, height: number) => width,
+    getBaseSize: (width: number) => width,
     formula: (width: number, height: number, value: number) => {
       const point = width * value
       return `M ${width} ${height / 2} L ${width - point} 0 L 0 0 L ${point} ${

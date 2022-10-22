@@ -25,7 +25,7 @@
   },
   ...}
  */
-const formatDateTime = (
+export const formatDateTime = (
   time: string,
   format = 'yyyy/M/dd HH:mm:ss'
 ): string => {
@@ -57,6 +57,6 @@ const formatDateTime = (
 export class Storage {
   private version: string
   constructor(keyPre = 'emxee_') {
-    this.version = ''
+    this.version = keyPre
   }
 }
