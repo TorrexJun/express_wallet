@@ -3,10 +3,5 @@
     <RouterView></RouterView>
   </transition>
 </template>
-<script setup lang="ts">
-import { onMounted } from 'vue'
-onMounted(() => {
-  //
-})
-</script>
+<script setup lang="ts"></script>
 <style scoped></style>
