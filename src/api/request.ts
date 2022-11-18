@@ -8,7 +8,7 @@ import { BASE_URL, TOKEN_NAME } from './const'
 
 const axiosRequestConfig: AxiosRequestConfig = {
   baseURL: BASE_URL,
-  timeout: 10000,
+  timeout: 20000,
 }
 
 const request: AxiosInstance = axios.create(axiosRequestConfig)
