@@ -11,7 +11,7 @@ const schema = new Schema({
 })
 
 export const createDocument = (content: string) => {
-  const htmlString = `<div>${content}</div>`
+  const htmlString = `<div class="title">${content}</div>`
   const parser = new window.DOMParser()
   const element = parser.parseFromString(htmlString, 'text/html').body
     .firstElementChild
