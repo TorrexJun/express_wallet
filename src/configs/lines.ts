@@ -23,6 +23,7 @@ export const LINE_LIST: PresetLine[] = [
       { path: 'M 0 0 L 20 20', style: 'solid', points: ['', 'arrow'] },
       { path: 'M 0 0 L 20 20', style: 'dashed', points: ['', 'arrow'] },
       { path: 'M 0 0 L 20 20', style: 'solid', points: ['', 'dot'] },
+	  { path: 'M 0 0 L 20 20', style: 'solid', points: ['', 'dot'] },
     ],
   },
   {
