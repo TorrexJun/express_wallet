@@ -21,7 +21,7 @@ export const layouts: Slide[] = [
         rotate: 0,
       },
       {
-        type: 'shape',
+        type: 'shape2',
         id: 'ookHrf',
         left: 0,
         top: 0,
