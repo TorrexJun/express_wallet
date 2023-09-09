@@ -11,7 +11,7 @@ export const layouts: Slide[] = [
         id: '4cbRxp',
         left: 0,
         top: 200,
-        width: 546,
+        width: 536,
         height: 362.5,
         viewBox: [200, 200],
         path: 'M 0 0 L 0 200 L 200 200 Z',
