@@ -23,7 +23,7 @@ export const layouts: Slide[] = [
       {
         type: 'shape2',
         id: 'ookHrf',
-        left: 0,
+        left: 1,
         top: 0,
         width: 300,
         height: 320,
