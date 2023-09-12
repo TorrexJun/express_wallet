@@ -40,7 +40,7 @@ export const layouts: Slide[] = [
         left: 355,
         top: 95.11111111111111,
         width: 586,
-        height: 116,
+        height: 117,
         lineHeight: 1.2,
         content:
           "<p style=''><strong><span style='font-size: 80px'>输入标题</span></strong></p>",
