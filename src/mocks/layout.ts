@@ -57,7 +57,7 @@ export const layouts: Slide[] = [
         width: 585,
         height: 56,
         content:
-          "<p><span style='font-size:  24px'>请在此处输入副标题</span></p>",
+          "<p><span style='font-size:  26px'>请在此处输入副标题</span></p>",
         rotate: 0,
         defaultFontName: '{{fontName}}',
         defaultColor: '{{fontColor}}',
