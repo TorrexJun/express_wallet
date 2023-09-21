@@ -65,7 +65,7 @@ export const layouts: Slide[] = [
       {
         type: 'line',
         id: 'FnpZs4',
-        left: 361,
+        left: 362,
         top: 238,
         start: [0, 0],
         end: [549, 0],
@@ -76,7 +76,7 @@ export const layouts: Slide[] = [
       },
     ],
     background: {
-      type: 'solid',
+      type: 'dash',
       color: '{{backgroundColor}}',
     },
   },
