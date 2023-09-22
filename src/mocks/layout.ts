@@ -76,7 +76,7 @@ export const layouts: Slide[] = [
       },
     ],
     background: {
-      type: 'dash',
+      type: 'dashed',
       color: '{{backgroundColor}}',
     },
   },
