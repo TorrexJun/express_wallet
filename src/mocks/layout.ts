@@ -68,7 +68,7 @@ export const layouts: Slide[] = [
         left: 362,
         top: 238,
         start: [0, 0],
-        end: [549, 0],
+        end: [549, 1],
         points: ['', ''],
         color: '{{themeColor}}',
         style: 'solid',
