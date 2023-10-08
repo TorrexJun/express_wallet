@@ -25,7 +25,7 @@ export const layouts: Slide[] = [
         id: 'ookHrf',
         left: 1,
         top: 0,
-        width: 300,
+        width: 310,
         height: 320,
         viewBox: [200, 200],
         path: 'M 0 0 L 0 200 L 200 200 Z',
