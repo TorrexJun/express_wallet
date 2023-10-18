@@ -27,7 +27,7 @@ export const layouts: Slide[] = [
         top: 0,
         width: 310,
         height: 320,
-        viewBox: [201, 211],
+        viewBox: [201, 221],
         path: 'M 0 0 L 0 2010 L 200 200 Z',
         fill: '{{themeColor}}',
         fixedRatio: false,
