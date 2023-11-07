@@ -10,6 +10,5 @@ export const render = async (url: string) => {
     return await renderToString(app, ctx)
   } catch (e) {
     console.error(e)
-    console.warn(e)
   }
 }
