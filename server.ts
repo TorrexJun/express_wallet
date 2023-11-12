@@ -52,6 +52,7 @@ async function createServer() {
       vite.ssrFixStacktrace(e)
       console.error(e)
       console.log(e)
+	  console.log(e)
       res.status(500).end(e.message)
     }
   })
