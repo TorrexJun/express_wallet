@@ -38,7 +38,7 @@ export const layouts: Slide[] = [
         type: 'text',
         id: 'AkIh3E',
         left: 356,
-        top: 95.2,
+        top: 95.4,
         width: 586,
         height: 117,
         lineHeight: 1.2,
