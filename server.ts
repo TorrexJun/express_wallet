@@ -40,7 +40,7 @@ async function createServer() {
       // 并提供类似HMR
       const { render } = await vite.ssrLoadModule('./src/entry-server.ts')
       // 渲染应用的HTML，函数调用了适当的SSR框架的API
-      console.log('url----', url)
+      console.log('url---', url)
       const appHtml = await render(url)
       // 注入渲染后的应用程序HTML到模板中
       const html = template.replace(`<!--ssr-outlet-->`, appHtml)
