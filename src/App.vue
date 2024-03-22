@@ -3,5 +3,5 @@
     <RouterView></RouterView>
   </transition>
 </template>
-<script setup lang="ts">console.log('666')</script>
+<script setup lang="ts"></script>
 <style scoped></style>
