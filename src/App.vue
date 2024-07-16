@@ -3,5 +3,7 @@
     <RouterView></RouterView>
   </transition>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+console.log('sdfs')
+</script>
 <style scoped></style>
