@@ -16,3 +16,4 @@ export const BASE_URL: string = import.meta.env.DEV
 
 export const TOKEN_NAME = 'Authorization'
 export const TOKEN_NAME_2 = 'Authorization'
+export const TOKEN_NAME_3 = 'Authorization'
