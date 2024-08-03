@@ -4,6 +4,6 @@
   </transition>
 </template>
 <script setup lang="ts">
-console.log('sdfs')
+console.log('1')
 </script>
 <style scoped></style>
