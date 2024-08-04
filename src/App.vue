@@ -4,6 +4,6 @@
   </transition>
 </template>
 <script setup lang="ts">
-console.log('1')
+console.log('12')
 </script>
 <style scoped></style>
