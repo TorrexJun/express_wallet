@@ -4,6 +4,5 @@
   </transition>
 </template>
 <script setup lang="ts">
-console.log('Date')
 </script>
 <style scoped></style>
