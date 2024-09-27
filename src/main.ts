@@ -12,6 +12,7 @@ import { createPinia } from 'pinia'
 export function createApp(): CreateApp<App, Router> {
   const app = createSSRApp(Element)
   console.log('create')
+  console.log('create')
   app.use(router)
   app.use(createPinia())
   return {
